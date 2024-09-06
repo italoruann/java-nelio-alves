@@ -16,6 +16,7 @@ public class ExEstruturaSequencial1 {
 
         System.out.printf("SOMA: %d", resul);
 
+
         input.close();
     }
 }
