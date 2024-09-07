@@ -43,7 +43,5 @@ public class EstruturaCondicional {
         else {
             System.out.println("Boa madrugada");
         }
-
-
     }
 }
