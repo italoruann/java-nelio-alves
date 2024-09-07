@@ -1,3 +1,5 @@
+package estruturasequencial;
+
 import java.util.Locale;
 
 public class SaidaDeDados {

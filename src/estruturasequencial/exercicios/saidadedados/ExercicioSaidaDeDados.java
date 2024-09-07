@@ -1,4 +1,4 @@
-package exercicios.saidadedados;
+package estruturasequencial.exercicios.saidadedados;
 
 import java.util.Locale;
 

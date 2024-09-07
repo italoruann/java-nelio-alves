@@ -1,4 +1,4 @@
-package exercicios.estruturasequencial;
+package estruturasequencial.exercicios.estruturasequencial;
 
 import java.util.Scanner;
 

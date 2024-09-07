@@ -1,3 +1,5 @@
+package estruturasequencial;
+
 public class FuncoesMatematicas {
     public static void main(String[] args) {
         // Algumas funções matemáticas em Java
