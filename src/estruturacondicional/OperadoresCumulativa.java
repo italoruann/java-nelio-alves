@@ -23,7 +23,7 @@ public class OperadoresCumulativa {
     /* Ou seja, aqui está abaixo os operadores de atribuição cumulativa:
     *  E pra que serve? Serve para deixar o codigo mais legivel.
     *  a += b; >>> a = a + b;
-    *  a -=; >>> a = a - b;
+    *  a -= b >>> a = a - b;
     *  a *= b; >>> a = a * b;
     *  a /= b; >>> a = a / b;
     *  a %= b; >>> a = a % b;
