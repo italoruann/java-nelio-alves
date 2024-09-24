@@ -1,0 +1,15 @@
+COMPOSIÇÃO
+• É utilizada em diagrama de classes
+• É um tipo de associação que permite que um objeto contenha outro. Ex: uma classe Pedido contém composição de ItemPedido.
+• Relação "tem-um" ou "tem-varios". Ex:
+
+Vantagens:
+• Organização: divisão de responsabilidades, ou seja, cada classe vai ter sua responsabilidade
+• Coesão: Cada objeto é responsável por uma única coisa
+• Flexibilidade: Trabalhar em divisão de partes é mais flexível que trabalhar com algo muito grande ou mal dividida.
+• Reuso: O mesmo objeto pode ser aproveitado em mais de 1 lugar.
+
+• Nota: embora o símbolo UML para composição (todo-parte) seja um diamante preto, neste contexto estamos chamando de composição qualquer assoiação tipo "tem-um" e "tem-varios".
+
+Dicas:
+• O asterisco(*) signica vários

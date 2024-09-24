@@ -1,0 +1,17 @@
+CATEGORIAS DE CLASSES
+• Em um sistema orientado a objetos, de modo geral "tudo" é um objeto.
+• Por questões de Design tais como organização, flexibilidade, reuso, delegação, etc., há vários categorias de classes.
+    ► Views -> São as telas do sistema.
+        • Ex: ProductPage.java
+
+    ► Controllers -> É o cara que faz o meio de campo entre a tela(View) e o sistema
+        • Ex: ProductController.java
+
+    ► Entities -> São entidades do negocio como Produto, Cliente, Pedidos, etc.
+        • Ex: Product.java
+
+    ► Services -> São classes que contêm a lógica de negócio do sistema. Elas realizam operações específicas que geralmente envolvem manipulação de dados e chamadas para os repositórios.
+        • Ex: ProductService.java
+
+    ► Repositories -> São objetos responsáveis por acessar os dados de um Banco de Dados ou de um repositório de dados qualquer.
+        • Ex: ProductRepository.java
