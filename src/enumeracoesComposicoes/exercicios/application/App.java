@@ -1,17 +1,14 @@
 package enumeracoesComposicoes.exercicios.application;
 
-import enumeracoesComposicoes.exercicios.entities.Client;
-import enumeracoesComposicoes.exercicios.entities.Order;
-import enumeracoesComposicoes.exercicios.entities.OrderItem;
-import enumeracoesComposicoes.exercicios.entities.Product;
-import enumeracoesComposicoes.exercicios.entities.enums.OrderStatus;
+import enumeracoesComposicoes.exercicios.models.entities.Client;
+import enumeracoesComposicoes.exercicios.models.entities.Order;
+import enumeracoesComposicoes.exercicios.models.entities.OrderItem;
+import enumeracoesComposicoes.exercicios.models.entities.Product;
+import enumeracoesComposicoes.exercicios.models.enums.OrderStatus;
 
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
@@ -36,17 +33,18 @@ public class App {
         System.out.print("Status: ");
         OrderStatus status = OrderStatus.valueOf(scanner.next());
 
-        System.out.print("How many items to this order? ");
-        int N = scanner.nextInt();
-
         Order order = new Order(new Date(), status, client);
 
+        System.out.print("How many items to this order? ");
+        int N = scanner.nextInt();
         for (int i = 1; i <= N; i++) {
+            scanner.nextLine();
             System.out.println("Enter #" + i + " item data:");
             System.out.print("Product name: ");
             String nameProduct = scanner.nextLine();
             System.out.print("Product price: ");
             double productPrice = scanner.nextDouble();
+            System.out.print("Quantity: ");
             int quantity = scanner.nextInt();
 
             Product product = new Product(nameProduct, productPrice);
@@ -55,7 +53,9 @@ public class App {
 
             order.addItem(items);
         }
-
+        System.out.println();
+        System.out.println("ORDER SUMMARY:");
+        System.out.println(order);
 
         scanner.close();
     }
