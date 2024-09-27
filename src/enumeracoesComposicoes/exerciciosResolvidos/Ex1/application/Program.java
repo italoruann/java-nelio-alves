@@ -1,9 +1,9 @@
-package enumeracoesComposicoes.exerciciosResolvidos.application;
+package enumeracoesComposicoes.exerciciosResolvidos.Ex1.application;
 
-import enumeracoesComposicoes.exerciciosResolvidos.entities.Department;
-import enumeracoesComposicoes.exerciciosResolvidos.entities.HourContract;
-import enumeracoesComposicoes.exerciciosResolvidos.entities.Worker;
-import enumeracoesComposicoes.exerciciosResolvidos.entities.enums.WorkerLevel;
+import enumeracoesComposicoes.exerciciosResolvidos.Ex1.entities.Department;
+import enumeracoesComposicoes.exerciciosResolvidos.Ex1.entities.HourContract;
+import enumeracoesComposicoes.exerciciosResolvidos.Ex1.entities.Worker;
+import enumeracoesComposicoes.exerciciosResolvidos.Ex1.entities.enums.WorkerLevel;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

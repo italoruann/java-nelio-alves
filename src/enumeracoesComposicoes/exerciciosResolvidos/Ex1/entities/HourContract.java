@@ -1,4 +1,4 @@
-package enumeracoesComposicoes.exerciciosResolvidos.entities;
+package enumeracoesComposicoes.exerciciosResolvidos.Ex1.entities;
 
 import java.util.Date;
 

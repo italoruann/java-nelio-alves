@@ -1,4 +1,4 @@
-package enumeracoesComposicoes.exerciciosResolvidos.entities;
+package enumeracoesComposicoes.exerciciosResolvidos.Ex1.entities;
 
 public class Department {
     private String name;

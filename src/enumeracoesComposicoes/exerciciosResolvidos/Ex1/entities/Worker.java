@@ -1,6 +1,6 @@
-package enumeracoesComposicoes.exerciciosResolvidos.entities;
+package enumeracoesComposicoes.exerciciosResolvidos.Ex1.entities;
 
-import enumeracoesComposicoes.exerciciosResolvidos.entities.enums.WorkerLevel;
+import enumeracoesComposicoes.exerciciosResolvidos.Ex1.entities.enums.WorkerLevel;
 
 import java.util.ArrayList;
 import java.util.Calendar;
