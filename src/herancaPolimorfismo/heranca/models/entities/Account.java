@@ -12,7 +12,7 @@ public class Account {
     private String holder;
     protected Double balance; // Permite importar esse atributo que seja do mesmo pacote ou que seja herdada por uma subclasse.
 
-    public Account(){
+    public Account() {
     }
 
     public Account(Integer number, String holder, Double balance) {
@@ -23,6 +23,10 @@ public class Account {
 
     public Integer getNumber() {
         return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
     }
 
     public String getHolder() {
@@ -37,16 +41,11 @@ public class Account {
         return balance;
     }
 
-    public void withDraw(Double amount) {
+    public void withdraw(double amount) {
         balance -= amount;
     }
 
-    public void deposit(Double amount) {
+    public void deposit(double amount) {
         balance += amount;
-    }
-
-    @Override
-    public String toString() {
-        return "Dados do cliente:\n" + "Número da conta: " + number + ", Titular: " + holder + ", Saldo total: " + String.format("%.2f", balance) + ", ";
     }
 }

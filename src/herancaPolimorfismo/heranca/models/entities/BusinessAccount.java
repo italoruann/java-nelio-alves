@@ -1,13 +1,14 @@
 package herancaPolimorfismo.heranca.models.entities;
 
-public class BusinessAcount extends Account {
+public class BusinessAccount extends Account {
+
     private Double loanLimit;
 
-    public BusinessAcount(){
+    public BusinessAccount() {
         super();
     }
 
-    public BusinessAcount(Integer number, String holder, Double balance, Double loanLimit) {
+    public BusinessAccount(Integer number, String holder, Double balance, Double loanLimit) {
         super(number, holder, balance); // associar aos atributos da classe mae que serao modificados
         this.loanLimit = loanLimit;
     }
@@ -16,16 +17,13 @@ public class BusinessAcount extends Account {
         return loanLimit;
     }
 
-    public void loan(Double amount) {
+    public void setLoanLimit(Double loanLimit) {
+        this.loanLimit = loanLimit;
+    }
+
+    public void loan(double amount) {
         if (amount <= loanLimit) {
             balance += amount - 10.0;
         }
-        else {
-            System.out.println("Empréstimo negado.");
-        }
-    }
-
-    public String toString() {
-        return "Limite de empréstimo: " + String.format("%.2f", loanLimit);
     }
 }
