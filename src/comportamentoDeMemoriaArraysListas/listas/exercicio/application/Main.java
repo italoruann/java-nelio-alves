@@ -21,7 +21,7 @@ public class Main {
 
         int contador = 1;
         for (int i = 0; i < N; i++) {
-            System.out.printf("\nEmployee #%d\n", contador);
+            System.out.printf("\nFuncionario #%d\n", contador);
 
             System.out.print("Id: ");
             int id = scanner.nextInt();

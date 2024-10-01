@@ -23,7 +23,7 @@ public class MainFuncionario {
 
         System.out.println();
         
-        System.out.println("Employee: " + funcionario);
+        System.out.println("Funcionario: " + funcionario);
 
         System.out.println();
 
