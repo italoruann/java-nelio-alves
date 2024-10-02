@@ -1,4 +1,4 @@
-package models.entities;
+package herancaPolimorfismo.exercicios.Ex1.models.entities;
 
 public class Product {
     private String name;

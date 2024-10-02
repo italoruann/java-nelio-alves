@@ -1,4 +1,4 @@
-package app;
+package herancaPolimorfismo.exercicios.Ex1.app;
 
 import java.text.ParseException;
 import java.time.LocalDate;
@@ -7,15 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import models.entities.ImportedProduct;
-import models.entities.Product;
-import models.entities.UsedProduct;
+import herancaPolimorfismo.exercicios.Ex1.models.entities.ImportedProduct;
+import herancaPolimorfismo.exercicios.Ex1.models.entities.Product;
+import herancaPolimorfismo.exercicios.Ex1.models.entities.UsedProduct;
 
 public class App {
     public static void main(String[] args) throws ParseException {
         Locale.setDefault(Locale.US);
         Scanner scanner = new Scanner(System.in);
-        
+
 
         List<Product> products = new ArrayList<>();
 
@@ -30,7 +30,7 @@ public class App {
             String name = scanner.next();
             System.out.print("Price: ");
             double price = scanner.nextDouble();
-            
+
             switch (option) {
                 case 'i' -> {
                     System.out.print("Customs fee: ");
@@ -51,7 +51,7 @@ public class App {
             System.out.println(product.priceTag());
         }
 
-        
+
         scanner.close();
     }
 }

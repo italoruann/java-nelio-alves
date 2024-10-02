@@ -1,4 +1,4 @@
-package models.entities;
+package herancaPolimorfismo.exercicios.Ex1.models.entities;
 
 public class ImportedProduct extends Product {
     private Double customFee;
