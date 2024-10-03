@@ -3,7 +3,7 @@ package introducaoPoo.entities;
 // Classe pode conter membros: atributos e métodos
 //  A classe também pode ter outros recursos como: Construtores, sobrecarga, encapsulamento, herança e polimorfismo.
 // Exemplos:
-// Entidades: Produto, Cliente, Pessoa
+// Entidades: Produto, Cliente, Contribuinte
 // Serviços: ProdutoService, ClienteService, EmailService, StorageService
 // Controladores: ProdutoController, ClienteController
 // Utilitarios: Calculadora, Compactador
