@@ -1,6 +1,6 @@
-package tryCatch.exercicioResolvido.versao_1_muitoruim.app;
+package tryCatch.exercicioResolvido.versaoruim.application;
 
-import tryCatch.exercicioResolvido.versao_1_muitoruim.models.entities.Reservation;
+import tryCatch.exercicioResolvido.versaoruim.model.entities.Reservation;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -22,7 +22,7 @@ public class App {
         Date checkOut = sdf.parse(sc.next());
         System.out.println();
 
-        // Verificar se a data chekin é maior que a data checkout.
+        // ESSA VALIDAÇÃO NÃO PODE SER REMOVIDA NA VERSÃO RUIM PQ EU PRECISARIA VALIDAR NO CONSTRUCTOR, PORÉM, O CONSTRUTOR NÃO PODE RETORNAR STRING.
         if (!checkOut.after(checkIn)) {
             System.out.println("Error in reservation: Check-out date must be after check-in date");
         } else {
@@ -41,22 +41,15 @@ public class App {
             System.out.print("Check-out date (dd/MM/yyyy): ");
             checkOut = sdf.parse(sc.next());
 
-            // Agora preciso tratar essa atualização para verificar se as datas não são futuras.
-            Date now = new Date();
-            if (checkIn.before(now) || checkOut.before(now)) { // Se minhas datas forem anterior(before)
-                System.out.println("Error in reservation: Reservation dates for update must be future dates");
+            String error = reservation.updateDates(checkIn, checkOut);
+            if (error != null) {
+                System.out.println("Error in reservation: " + error);
             }
-            // Repetir a mesma logica pra verificar se a data checkin é maior que a data checkout.
-            else if (!checkOut.after(checkIn)) {
-                System.out.println("Error in reservation: Check-out date must be after check-in date");
-
-            } else {
+            else {
                 reservation.updateDates(checkIn, checkOut);
                 System.out.println("Reservation: " + reservation);
             }
-
         }
-
         sc.close();
     }
 }

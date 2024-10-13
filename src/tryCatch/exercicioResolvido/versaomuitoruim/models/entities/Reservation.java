@@ -1,4 +1,4 @@
-package tryCatch.exercicioResolvido.versao_1_muitoruim.models.entities;
+package tryCatch.exercicioResolvido.versaomuitoruim.models.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
