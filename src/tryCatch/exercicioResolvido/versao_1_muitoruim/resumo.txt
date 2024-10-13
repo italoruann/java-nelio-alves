@@ -1,0 +1,2 @@
+• Solução 1 (muito ruim): lógica de validação no programa principal
+    • Lógica de validação não delegada à reserva
