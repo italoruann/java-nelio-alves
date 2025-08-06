@@ -1,4 +1,4 @@
-package listas;
+package comportamentoDeMemoriaArraysListas.listas;
 
 import java.util.ArrayList;
 import java.util.List;

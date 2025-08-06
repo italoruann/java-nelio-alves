@@ -1,4 +1,4 @@
-package listas.exercicio.entities;
+package comportamentoDeMemoriaArraysListas.listas.exercicio.entities;
 
 public class Employee {
     private Integer id;
